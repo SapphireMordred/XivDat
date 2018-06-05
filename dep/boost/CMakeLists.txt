@@ -8,7 +8,6 @@
 # WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-message( $ENV{BOOST_ROOT_DIR} )
 set(BOOST_ROOT $ENV{BOOST_ROOT_DIR})
 
 if(WIN32)

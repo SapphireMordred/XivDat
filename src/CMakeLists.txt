@@ -14,3 +14,5 @@ if (UNIX)
 endif()
 target_link_libraries( xivdat PUBLIC zlib )
 target_include_directories( xivdat PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${Boost_INCLUDE_DIR} )
+
+install( DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin/ DESTINATION lib USE_SOURCE_PERMISSIONS FILES_MATCHING PATTERN "*.lib*" )
